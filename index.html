@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-1</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <main>
+        <section class="">
+            <form class="" id="form1">
+                <h2>masukan id elemen html</h2>
+                <input type="text" class="" id="input1"><br><br>
+                <input type="submit" class="">
+            </form><br>
+            <article>
+                <h2>Info elemen html:</h2>
+                <p class="">Tag: <span id="tagInfo"></span></p>
+                <p class="">ID: <span id="idInfo"></span></p>
+                <p class="">Class: <span id="classInfo"></span></p>
+                <p class="">Text: <span id="textInfo"></span></p>
+            </article>
+            <form class="" id="form2">
+                <h2>Editor style elemen</h2>
+                <p>Warna: <span><input type="text" id="input2"></span> <span><input type="submit" value="ganti"></span></p>
+                <p>Ukuran: <span><input type="text" id="input3"></span> <span><input type="submit" value="ubah"></span></p>
+                <p>Text: <span><input type="text" id="input4"></span> <span><input type="submit" value="rubah"></span></p>
+            </form>
+        </section>
+        <section>
+            <h2>target elemen untuk di edit</h2>
+            <p>hover elemen dibawah ini utk melihat id</p>
+            <h1 class="h1-class" id="pTarget" onmouseover="in1()" onmouseout="out1()">ini contoh elemen h1</h1>
+            <p id="alert1"></p>
+            <p class="p-class" id="ppTarget" onmouseover="in2()" onmouseout="out2()">ini paragraph</p>
+            <p id="alert2"></p>
+            <button class="button-class" id="pppTarget" onmouseover="in3()" onmouseout="out3()">ini button</button>
+            <p id="alert3"></p>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
