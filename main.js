@@ -55,14 +55,23 @@ form1.addEventListener("submit", function(event) {
         textInfo.textContent = "ini contoh elemen h1"
         textInfo.style.color = "blue"
     }else if(input1 === "ppTarget") {
-        tagInfo.textContent = "<h1>"
-        tagInfo.style.color = "blue"
-        idInfo.textContent = "pTarget"
-        idInfo.style.color = "blue"
-        classInfo.textContent = "h1-class"
-        classInfo.style.color = "blue"
-        textInfo.textContent = "ini contoh elemen h1"
-        textInfo.style.color = "blue"
+        tagInfo.textContent = "<p>"
+        tagInfo.style.color = "purple"
+        idInfo.textContent = "ppTarget"
+        idInfo.style.color = "purple"
+        classInfo.textContent = "p-class"
+        classInfo.style.color = "purple"
+        textInfo.textContent = "ini paragraph"
+        textInfo.style.color = "purple"
+    }else if(input1 === "pppTarget") {
+        tagInfo.textContent = "<button>"
+        tagInfo.style.color = "green"
+        idInfo.textContent = "pppTarget"
+        idInfo.style.color = "green"
+        classInfo.textContent = "button-class"
+        classInfo.style.color = "green"
+        textInfo.textContent = "ini button"
+        textInfo.style.color = "green"
     }
 });
 
