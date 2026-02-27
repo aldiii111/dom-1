@@ -86,49 +86,31 @@ form1.addEventListener("submit", function(event) {
         const input2 = document.getElementById('input2').value
         const input3 = document.getElementById('input3').value
         const input4 = document.getElementById('input4').value
-        const input33 = parseFloat(input3)
+        const input33 = parseFloat(input3)  
 
         if(result === "pTarget") {
-            if(colorrr.includes(input2)) {
-                pTarget.style.color = input2
-            }
+            if(colorrr.includes(input2)) pTarget.style.color = input2;
+  
             if(input3) {
-                if(isNaN(input33)) {
-                    alert('harus number')
-                }else{
-                    pTarget.style.fontSize = input33 + "px"
-                }
+                (isNaN(input33)) ? alert('harus number') : pTarget.style.fontSize = input33 + "px"
             }
-            if(input4 !== "") {
-                pTarget.textContent = input4
-            }
+            if(input4 !== "") pTarget.textContent = input4;
+                
         }if(result === "ppTarget") {
-            if(colorrr.includes(input2)) {
-                ppTarget.style.color = input2
-            }
+            if(colorrr.includes(input2)) ppTarget.style.color = input2;
+               
             if(input3) {
-                if(isNaN(input33)) {
-                    alert('harus number')
-                }else{
-                    ppTarget.style.fontSize = input33 + "px"
-                }
+                (isNaN(input33)) ? alert('harus number') : ppTarget.style.fontSize = input33 + "px"
             }
-            if(input4 !== "") {
-                ppTarget.textContent = input4
-            }
+            if(input4 !== "") ppTarget.textContent = input4;
+                
         }if(result === "pppTarget") {
-            if(colorrr.includes(input2)) {
-                pppTarget.style.color = input2
-            }
+            if(colorrr.includes(input2)) pppTarget.style.color = input2;
+                
             if(input3) {
-                if(isNaN(input33)) {
-                    alert('harus number')
-                }else{
-                    pppTarget.style.fontSize = input33 + "px"
-                }
+                (isNaN(input33)) ? alert('harus number') : pppTarget.style.fontSize = input33 + "px"
             }
-            if(input4 !== "") {
-                pppTarget.textContent = input4
-            }
+            if(input4 !== "") pppTarget.textContent = input4;
+                
         }
     })
