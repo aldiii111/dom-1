@@ -40,6 +40,8 @@ function out3() {
     alert3.textContent = ""
 }
 
+let result;
+
 form1.addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -54,6 +56,7 @@ form1.addEventListener("submit", function(event) {
         classInfo.style.color = "blue"
         textInfo.textContent = "ini contoh elemen h1"
         textInfo.style.color = "blue"
+        result = input1
     }else if(input1 === "ppTarget") {
         tagInfo.textContent = "<p>"
         tagInfo.style.color = "purple"
@@ -63,6 +66,7 @@ form1.addEventListener("submit", function(event) {
         classInfo.style.color = "purple"
         textInfo.textContent = "ini paragraph"
         textInfo.style.color = "purple"
+        result = input1
     }else if(input1 === "pppTarget") {
         tagInfo.textContent = "<button>"
         tagInfo.style.color = "green"
@@ -72,28 +76,59 @@ form1.addEventListener("submit", function(event) {
         classInfo.style.color = "green"
         textInfo.textContent = "ini button"
         textInfo.style.color = "green"
+        result = input1
     }
 });
 
-form2.addEventListener("submit", function(event){
-    event.preventDefault();
+    form2.addEventListener("submit", function(event){
+        event.preventDefault();
 
-    const input2 = document.getElementById('input2').value
-    const input3 = document.getElementById('input3').value
-    const input4 = document.getElementById('input4').value
-    const input33 = parseFloat(input3)
+        const input2 = document.getElementById('input2').value
+        const input3 = document.getElementById('input3').value
+        const input4 = document.getElementById('input4').value
+        const input33 = parseFloat(input3)
 
-    if(colorrr.includes(input2)) {
-        pTarget.style.color = input2
-    }
-    if(input3) {
-        if(isNaN(input33)) {
-            alert('harus number')
-        }else{
-            pTarget.style.fontSize = input33
+        if(result === "pTarget") {
+            if(colorrr.includes(input2)) {
+                pTarget.style.color = input2
+            }
+            if(input3) {
+                if(isNaN(input33)) {
+                    alert('harus number')
+                }else{
+                    pTarget.style.fontSize = input33 + "px"
+                }
+            }
+            if(input4 !== "") {
+                pTarget.textContent = input4
+            }
+        }if(result === "ppTarget") {
+            if(colorrr.includes(input2)) {
+                ppTarget.style.color = input2
+            }
+            if(input3) {
+                if(isNaN(input33)) {
+                    alert('harus number')
+                }else{
+                    ppTarget.style.fontSize = input33 + "px"
+                }
+            }
+            if(input4 !== "") {
+                ppTarget.textContent = input4
+            }
+        }if(result === "pppTarget") {
+            if(colorrr.includes(input2)) {
+                pppTarget.style.color = input2
+            }
+            if(input3) {
+                if(isNaN(input33)) {
+                    alert('harus number')
+                }else{
+                    pppTarget.style.fontSize = input33 + "px"
+                }
+            }
+            if(input4 !== "") {
+                pppTarget.textContent = input4
+            }
         }
-    }
-    if(input4 !== "") {
-        pTarget.textContent = input4
-    }
-})
+    })
