@@ -89,10 +89,8 @@ form2.addEventListener("submit", function(event){
     if(input3) {
         if(isNaN(input33)) {
             alert('harus number')
-            console.log('bukan number')
         }else{
-            alert('number')
-            console.log('number')
+            pTarget.style.fontSize = input33
         }
     }
     if(input4 !== "") {
