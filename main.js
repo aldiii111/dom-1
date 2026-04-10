@@ -13,6 +13,7 @@ import {
   alert1,
   alert2,
   alert3,
+  colorrr,
 } from "./exportir.js";
 
 function in1() {
@@ -39,8 +40,6 @@ function out3() {
 }
 
 let result;
-import { colorrr } from "./exportir.js";
-console.log(colorrr);
 
 form1.addEventListener("submit", function (event) {
   event.preventDefault();
