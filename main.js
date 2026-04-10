@@ -39,7 +39,8 @@ function out3() {
 }
 
 let result;
-const colorrr = ["green", "yellow", "blue", "red", "black", "white", "grey"];
+import { colorrr } from "./exportir.js";
+console.log(colorrr)
 
 form1.addEventListener("submit", function(event) {
     event.preventDefault();
