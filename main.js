@@ -16,6 +16,14 @@ import {
   colorrr,
 } from "./exportir.js";
 
+pTarget.addEventListener("mouseover", in1)
+ppTarget.addEventListener("mouseover", in2)
+pppTarget.addEventListener("mouseover", in3)
+
+pTarget.addEventListener("mouseout", out1)
+ppTarget.addEventListener("mouseout", out2)
+pppTarget.addEventListener("mouseout", out3)
+
 function in1() {
   alert1.textContent = "id = pTarget";
   alert1.style.color = "red";
